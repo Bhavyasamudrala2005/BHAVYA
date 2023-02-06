@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int rows,clos,i,j;
+	printf("Enter the rows and columns of rectangle\n:");
+	scanf("%d%d", &rows, &clos);
+	for(i=0;i<rows;i++)
+	{
+    for(j=0;j<clos;j++)
+    {
+    printf("* ");
+	}
+	printf("\n");
+	}
+	return 0;
+}
