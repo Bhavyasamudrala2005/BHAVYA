@@ -1,0 +1,12 @@
+#include<stdio.h>
+struct integer
+{
+	int a;
+}y;
+int main()
+{
+	printf("enter an iinteger:");
+	scanf("%d",&y.a);
+	printf("integer:%d",y.a);
+	return 0;
+}
