@@ -1,0 +1,29 @@
+#include<stdio.h>
+struct employee
+{
+	float salary,HRA,DA,PF,total_salary;
+}s;
+int main()
+{
+	printf("enter employee salary:");
+	scanf("%f",&s.salary);
+	if(s.salary <= 15000)
+	{
+		s.HRA = (s.salary * 10)/100;
+		s.DA =(s.salary * 12)/100;
+	}
+	else if (s.salary <= 2000)
+	{
+		s.HRA = (s.salary * 15)/100;
+		s.DA =(s.salary * 20)/100;
+	}
+	else
+	{
+		s.HRA =(s.salary * 20)/100;
+		s.DA =(s.salary * 30)/100;
+	}
+	s.total_salary = s.salary + s.HRA + s.DA - s.PF;
+	printf("salary:%.2f",s.total_salary);
+	return 0;
+	
+}
