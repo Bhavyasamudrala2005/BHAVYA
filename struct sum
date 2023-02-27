@@ -1,0 +1,15 @@
+#include<stdio.h>
+struct value
+{
+	int a,b;
+}y;
+int main()
+{
+	printf("enter an a value:");
+	scanf("%d",&y.a);
+	printf("enter an b value:");
+	scanf("%d",&y.b);
+	sum = y.a + y.b
+	printf("sum:%d",sum);
+	return 0;
+}
